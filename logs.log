@@ -1,0 +1,34 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.7, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- c:\users\konrad\appdata\local\programs\python\python38\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Konrad\PycharmProjects\pytest_demo, configfile: pytest.ini
+plugins: reportlog-0.1.2
+collecting ... collected 14 items
+
+tests/test_add.py::test_add PASSED                                       [  7%]
+tests/test_add.py::test_add_failing FAILED                               [ 14%]
+tests/test_divide.py::test_divide PASSED                                 [ 21%]
+tests/test_divide.py::test_divide_floats PASSED                          [ 28%]
+tests/test_divide.py::test_divide_small_floats PASSED                    [ 35%]
+tests/test_divide.py::test_divide_conftest_number[1-1] PASSED            [ 42%]
+tests/test_divide.py::test_divide_conftest_number[1-4] PASSED            [ 50%]
+tests/test_divide.py::test_divide_conftest_number[1-5] PASSED            [ 57%]
+tests/test_divide.py::test_divide_conftest_number[8-1] PASSED            [ 64%]
+tests/test_divide.py::test_divide_conftest_number[8-4] PASSED            [ 71%]
+tests/test_divide.py::test_divide_conftest_number[8-5] PASSED            [ 78%]
+tests/test_divide.py::test_divide_conftest_number[5-1] PASSED            [ 85%]
+tests/test_divide.py::test_divide_conftest_number[5-4] PASSED            [ 92%]
+tests/test_divide.py::test_divide_conftest_number[5-5] PASSED            [100%]
+
+================================== FAILURES ===================================
+______________________________ test_add_failing _______________________________
+
+    def test_add_failing():
+        """This test is designed to fail"""
+>       assert False
+E       assert False
+
+tests\test_add.py:15: AssertionError
+=========================== short test summary info ===========================
+FAILED tests/test_add.py::test_add_failing - assert False
+======================== 1 failed, 13 passed in 0.07s =========================
